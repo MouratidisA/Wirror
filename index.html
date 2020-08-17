@@ -4,11 +4,15 @@
 <head>
 
     <title></title>
+    <link href='css/weather-icons.css' rel='stylesheet' />
+    <link href='css/weather-icons-wind.css' rel='stylesheet' />
+
+    
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
 
-<body style="background-color: black;" onload="bodyInit()">
+<body style="background-color: black;color: white;" onload="bodyInit()">
     <div class="container" style="height: 1024px; ">
         <div class="row h-25">
             <div class="col-8">
@@ -16,7 +20,9 @@
                 <h1 id="clock"> </h1>
             </div>
             
-            <div class="col-4"></div>
+            <div class="col-4"  >
+                <div id='wd'></div>
+            </div>
         </div>
 
         <div class="row h-75"> </div>
@@ -58,7 +64,7 @@
             return i;
         }
     </script>
-
+ <script type ="text/javascript" src='js/weather.js'></script>
     <script src="js/bootstrap.min.js"></script>
 </body>
 
